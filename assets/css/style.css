@@ -1,1 +1,57 @@
-body {}
+body{
+font-family:Arial,sans-serif;
+}
+
+.navbar{
+transition:0.3s;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1800')
+center center/cover;
+display:flex;
+align-items:center;
+color:white;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.5);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:700;
+}
+
+.section{
+padding:100px 0;
+}
+
+.project-card{
+overflow:hidden;
+}
+
+.project-card img{
+transition:.4s;
+}
+
+.project-card:hover img{
+transform:scale(1.05);
+}
+
+.footer{
+background:#111;
+color:white;
+padding:40px 0;
+}
