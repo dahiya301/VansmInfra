@@ -123,3 +123,59 @@ font-size:1rem;
 }
 
 }
+
+:root{
+    --heading-font:'Playfair Display', serif;
+    --body-font:'Inter', sans-serif;
+    }
+    
+    body{
+    font-family:var(--body-font);
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+    font-family:var(--heading-font);
+    }
+
+
+    .navbar{
+        transition:.4s;
+        padding:20px 0;
+        }
+        
+        .navbar.scrolled{
+        background:#111;
+        padding:12px 0;
+        }
+
+.project-card{
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.project-card img{
+    transition:all 0.7s ease;
+    width:100%;
+}
+
+.project-card:hover img{
+    transform:scale(1.08);
+}
+
+.project-card::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.15);
+    opacity:0;
+    transition:0.4s;
+}
+
+.project-card:hover::after{
+    opacity:1;
+}
+
