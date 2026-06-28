@@ -3,34 +3,15 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Projects | Modern Studio</title>
+      <title>Projects | VANSM INFRA PRIVATE LIMITED</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+      <link rel="stylesheet" href="assets/css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-      <link rel="icon" href="favicon.ico">
-      <!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-<meta name="apple-mobile-web-app-title" content="VANSM Infra">
-
-<link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#111111">
       <style>
-         :root{
-         --bg:#ffffff;
-         --text:#111111;
-         --card:#ffffff;
-         }
-         .dark-mode{
-         --bg:#111111;
-         --text:#ffffff;
-         --card:#1b1b1b;
-         }
          body{
          font-family:'Inter',sans-serif;
          background:var(--bg);
@@ -41,70 +22,25 @@
          font-family:'Playfair Display',serif;
          }
          .navbar{
-         background:#111;
+            background:var(--navbar-bg);
          }
          .page-header{
          padding:150px 0 80px;
-         background:#111;
-         color:white;
+         background:var(--navbar-bg);
+         color:var(--white);
          text-align:center;
          }
-         .filter-btn{
-         margin:5px;
-         }
-         .portfolio{
-         column-count:3;
-         column-gap:20px;
-         }
-         .portfolio-item{
-         break-inside:avoid;
-         margin-bottom:20px;
-         position:relative;
-         overflow:hidden;
-         border-radius:12px;
-         cursor:pointer;
-         }
-         .portfolio-item img{
-         width:100%;
-         display:block;
-         transition:.8s;
-         }
-         .portfolio-item:hover img{
-         transform:scale(1.08);
-         }
-         .overlay{
-         position:absolute;
-         inset:0;
-         background:rgba(0,0,0,.4);
-         opacity:0;
-         transition:.4s;
-         display:flex;
-         align-items:center;
-         justify-content:center;
-         }
-         .portfolio-item:hover .overlay{
-         opacity:1;
-         }
-         .overlay-content{
-         color:white;
-         text-align:center;
-         }
-         .footer{
-         background:#111;
-         color:white;
-         padding:60px 0;
-         margin-top:100px;
-         }
-         @media(max-width:991px){
-         .portfolio{
-         column-count:2;
-         }
-         }
-         @media(max-width:768px){
-         .portfolio{
-         column-count:1;
-         }
-         }
+         .filter-btn{margin:5px;}
+         .portfolio{column-count:3;column-gap:20px}
+         .portfolio-item{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;border-radius:12px;cursor:pointer}
+         .portfolio-item img{width:100%;display:block;transition:.8s}
+         .portfolio-item:hover img{transform:scale(1.08)}
+         .overlay{position:absolute;inset:0;background:var(--overlay);opacity:0;transition:.4s;display:flex;align-items:center;justify-content:center}
+         .portfolio-item:hover .overlay{opacity:1}
+         .overlay-content{color:var(--white);text-align:center}
+         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0;margin-top:100px}
+         @media(max-width:991px){.portfolio{column-count:2}}
+         @media(max-width:768px){.portfolio{column-count:1}}
       </style>
    </head>
    <body>
@@ -265,12 +201,12 @@
       </section>
       <footer class="footer">
          <div class="container text-center">
-            <h4>Modern Studio</h4>
+            <h4>VANSM INFRA PRIVATE LIMITED</h4>
             <p>
                Architecture • Interiors • Urban Design
             </p>
             <p>
-               &copy; 2026 Modern Studio. All Rights Reserved.
+               &copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.
             </p>
             <p class="mt-3">
                <a href="privacy.html" class="text-white text-decoration-none">
@@ -287,43 +223,17 @@
             </p>
          </div>
       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-         AOS.init({
-         duration:1200,
-         once:true
-         });
-         
-         function filterSelection(category){
-         
-         let items =
-         document.querySelectorAll('.portfolio-item');
-         
-         items.forEach(item=>{
-         
-         if(category==='all'){
-         item.style.display='block';
-         }
-         else if(item.classList.contains(category)){
-         item.style.display='block';
-         }
-         else{
-         item.style.display='none';
-         }
-         
-         });
-         
-         }
-         
-         document
-         .getElementById('themeToggle')
-         .addEventListener('click',()=>{
-         
-         document.body.classList.toggle('dark-mode');
-         
-         });
-         
-      </script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+         <script src="assets/js/main.js"></script>
+         <script>
+             function filterSelection(category){
+                let items = document.querySelectorAll('.portfolio-item');
+                items.forEach(item=>{
+                   if(category==='all' || item.classList.contains(category)) item.style.display='block';
+                   else item.style.display='none';
+                });
+             }
+         </script>
    </body>
 </html>

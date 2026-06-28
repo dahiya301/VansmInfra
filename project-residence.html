@@ -3,10 +3,11 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Luxury Residence | Modern Studio</title>
+      <title>Luxury Residence | VANSM INFRA PRIVATE LIMITED</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet"
          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+      <link rel="stylesheet" href="assets/css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
@@ -23,83 +24,20 @@
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#111111">
       <style>
-         :root{
-         --bg:#ffffff;
-         --text:#111111;
-         --card:#ffffff;
-         --section:#f8f9fa;
-         }
-         .dark-mode{
-         --bg:#111111;
-         --text:#ffffff;
-         --card:#1d1d1d;
-         --section:#161616;
-         }
-         body{
-         font-family:'Inter',sans-serif;
-         background:var(--bg);
-         color:var(--text);
-         transition:.4s;
-         }
-         h1,h2,h3,h4,h5{
-         font-family:'Playfair Display',serif;
-         }
-         .navbar{
-         background:#111;
-         }
-         .hero{
-         height:75vh;
-         background:
-         url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=2200')
-         center center/cover;
-         position:relative;
-         display:flex;
-         align-items:center;
-         }
-         .hero::before{
-         content:'';
-         position:absolute;
-         inset:0;
-         background:rgba(0,0,0,.45);
-         }
-         .hero-content{
-         position:relative;
-         z-index:2;
-         color:white;
-         }
-         .section{
-         padding:100px 0;
-         }
-         .info-card{
-         background:var(--card);
-         padding:30px;
-         border-radius:12px;
-         box-shadow:0 10px 30px rgba(0,0,0,.08);
-         }
-         .gallery img{
-         width:100%;
-         border-radius:12px;
-         transition:.6s;
-         }
-         .gallery img:hover{
-         transform:scale(1.03);
-         }
-         .related-card{
-         overflow:hidden;
-         border-radius:12px;
-         }
-         .related-card img{
-         width:100%;
-         transition:.8s;
-         }
-         .related-card:hover img{
-         transform:scale(1.08);
-         }
-         .footer{
-         background:#111;
-         color:white;
-         padding:60px 0;
-         }
+         body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);transition:.4s}
+         h1,h2,h3,h4,h5{font-family:'Playfair Display',serif}
+         .navbar{background:var(--navbar-bg)}
+         .hero{height:75vh;background:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=2200') center center/cover;position:relative;display:flex;align-items:center}
+         .hero::before{content:'';position:absolute;inset:0;background:var(--overlay)}
+         .hero-content{position:relative;z-index:2;color:var(--white)}
+         .section{padding:100px 0}
+         .info-card{background:var(--surface);padding:30px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+         .gallery img{width:100%;border-radius:12px;transition:.6s}
+         .gallery img:hover{transform:scale(1.03)}
+         .related-card{overflow:hidden;border-radius:12px}
+         .related-card img{width:100%;transition:.8s}
+         .related-card:hover img{transform:scale(1.08)}
+         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0}
       </style>
    </head>
    <body>
@@ -140,10 +78,21 @@
                         href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link"
-                        href="projects.html">Projects</a>
+                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link active" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item ms-2">
                      <button
                         id="themeToggle"
                         class="btn btn-outline-light ms-3">
@@ -304,12 +253,12 @@
       </section>
       <footer class="footer">
          <div class="container text-center">
-            <h4>Modern Studio</h4>
+            <h4>VANSM INFRA PRIVATE LIMITED</h4>
             <p>
                Architecture • Interiors • Urban Design
             </p>
             <p>
-               &copy; 2026 Modern Studio. All Rights Reserved.
+               &copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.
             </p>
             <p class="mt-3">
                <a href="privacy.html" class="text-white text-decoration-none">
@@ -328,20 +277,6 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-         AOS.init({
-         duration:1200,
-         once:true
-         });
-         
-         document
-         .getElementById('themeToggle')
-         .addEventListener('click',()=>{
-         
-         document.body.classList.toggle('dark-mode');
-         
-         });
-         
-      </script>
+      <script src="assets/js/main.js"></script>
    </body>
 </html>

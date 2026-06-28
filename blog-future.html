@@ -3,118 +3,45 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Future of Sustainable Architecture | Modern Studio</title>
+      <title>Future of Sustainable Architecture | VANSM INFRA PRIVATE LIMITED</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
       <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+      <link rel="stylesheet" href="assets/css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
       <link rel="icon" href="favicon.ico">
-      <!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-<meta name="apple-mobile-web-app-title" content="VANSM Infra">
-
-<link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#111111">
+      <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <meta name="apple-mobile-web-app-title" content="VANSM Infra">
+      <link rel="manifest" href="site.webmanifest">
+      <meta name="theme-color" content="#111111">
       <style>
-         :root{
-         --bg:#ffffff;
-         --text:#111111;
-         --card:#ffffff;
-         --section:#f8f9fa;
-         }
-         .dark-mode{
-         --bg:#111111;
-         --text:#ffffff;
-         --card:#1d1d1d;
-         --section:#161616;
-         }
-         body{
-         font-family:'Inter',sans-serif;
-         background:var(--bg);
-         color:var(--text);
-         transition:.4s;
-         line-height:1.8;
-         }
-         h1,h2,h3,h4,h5{
-         font-family:'Playfair Display',serif;
-         }
-         .navbar{
-         background:#111;
-         }
-         .hero{
-         height:70vh;
-         background:
-         url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=2200')
-         center center/cover;
-         position:relative;
-         display:flex;
-         align-items:center;
-         }
-         .hero::before{
-         content:'';
-         position:absolute;
-         inset:0;
-         background:rgba(0,0,0,.5);
-         }
-         .hero-content{
-         position:relative;
-         z-index:2;
-         color:white;
-         }
-         .article{
-         padding:100px 0;
-         }
-         .meta{
-         color:#888;
-         font-size:.95rem;
-         }
-         .article-content{
-         max-width:850px;
-         margin:auto;
-         }
-         .article-content img{
-         width:100%;
-         border-radius:12px;
-         margin:30px 0;
-         }
-         blockquote{
-         border-left:5px solid #111;
-         padding-left:20px;
-         margin:40px 0;
-         font-size:1.2rem;
-         font-style:italic;
-         }
-         .related-card{
-         background:var(--card);
-         border-radius:12px;
-         overflow:hidden;
-         box-shadow:0 10px 30px rgba(0,0,0,.08);
-         transition:.4s;
-         height:100%;
-         }
-         .related-card:hover{
-         transform:translateY(-10px);
-         }
-         .related-card img{
-         width:100%;
-         height:220px;
-         object-fit:cover;
-         }
-         .footer{
-         background:#111;
-         color:white;
-         padding:60px 0;
-         margin-top:100px;
-         }
-         a{
-         text-decoration:none;
-         color:inherit;
-         }
+         body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);transition:.4s}
+         h1,h2,h3,h4,h5{font-family:'Playfair Display',serif}
+         .navbar{background:var(--navbar-bg)}
+         .page-header{padding:170px 0 100px;background:var(--navbar-bg);color:var(--white);text-align:center}
+         .section{padding:100px 0}
+         .featured-post{overflow:hidden;border-radius:16px;background:var(--surface);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+         .featured-post img{width:100%;height:500px;object-fit:cover}
+         .blog-card{background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.4s;height:100%}
+         .blog-card:hover{transform:translateY(-10px)}
+         .blog-card img{width:100%;height:240px;object-fit:cover}
+         .sidebar-card{background:var(--surface);padding:30px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);margin-bottom:30px}
+         .newsletter{background:var(--navbar-bg);color:var(--white);padding:100px 0;text-align:center}
+         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0}
+         a{text-decoration:none;color:inherit}
+      </style>
+      <style>
+         blockquote{border-left:5px solid var(--navbar-bg);padding-left:20px;margin:40px 0;font-size:1.2rem;font-style:italic}
+         .related-card{background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.4s;height:100%}
+         .related-card:hover{transform:translateY(-10px)}
+         .related-card img{width:100%;height:220px;object-fit:cover}
+         .footer{background:var(--navbar-bg);color:var(--white);padding:60px 0;margin-top:100px}
+         a{text-decoration:none;color:inherit}
       </style>
    </head>
    <body>
@@ -154,12 +81,24 @@
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="blog.html">Blog</a>
+                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item ms-2">
                      <button
                         id="themeToggle"
-                        class="btn btn-outline-light ms-3">
+                        class="btn btn-outline-light">
                      🌙
                      </button>
                   </li>
@@ -184,7 +123,7 @@
          <div class="container">
             <div class="article-content">
                <div class="meta mb-4">
-                  By Modern Studio • June 2026 • 8 min read
+                  By VANSM INFRA PRIVATE LIMITED • June 2026 • 8 min read
                </div>
                <p>
                   Sustainable architecture is no longer a niche concept.
@@ -320,12 +259,12 @@
       </section>
       <footer class="footer">
          <div class="container text-center">
-            <h4>Modern Studio</h4>
+            <h4>VANSM INFRA PRIVATE LIMITED</h4>
             <p>
                Architecture • Interiors • Urban Design
             </p>
             <p>
-               &copy; 2026 Modern Studio. All Rights Reserved.
+               &copy; 2026 VANSM INFRA PRIVATE LIMITED. All Rights Reserved.
             </p>
             <p class="mt-3">
                <a href="privacy.html" class="text-white text-decoration-none">
@@ -344,20 +283,6 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-         AOS.init({
-         duration:1200,
-         once:true
-         });
-         
-         document
-         .getElementById('themeToggle')
-         .addEventListener('click',()=>{
-         
-         document.body.classList.toggle('dark-mode');
-         
-         });
-         
-      </script>
+      <script src="assets/js/main.js"></script>
    </body>
 </html>
